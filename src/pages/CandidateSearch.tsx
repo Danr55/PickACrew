@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
-import { searchGithub, searchGithubUser } from '../api/API';
+import { searchGithub, searchGithubUser } from '../api/API.tsx';
+import Candidate from '../interfaces/Candidate.interface.tsx';
 
 const CandidateSearch = () => {
-  return <h1>CandidateSearch</h1>;
+  
 };
 
 export default CandidateSearch;

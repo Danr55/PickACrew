@@ -1,9 +1,9 @@
-const SavedCandidates = () => {
-  return (
-    <>
-      <h1>Potential Candidates</h1>
-    </>
-  );
+import { useState, useEffect } from 'react';
+import { searchGithub, searchGithubUser } from '../api/API.tsx';
+import Candidate from '../interfaces/Candidate.interface.tsx';
+
+const CandidateSearch = () => {
+
 };
 
-export default SavedCandidates;
+export default CandidateSearch;
