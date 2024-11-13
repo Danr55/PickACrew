@@ -74,31 +74,31 @@ const CandidateSearch = () => {
 
   return (
     <div>
-      <div>
+      <div className='candidate-card'>
         <img
           src={currentCandidate.avatar_url}
           alt={`${currentCandidate.login}'s avatar`}
         />
-        <div>
+        <div className='candidate-details'>
           <h2>{currentCandidate.name || currentCandidate.login}</h2>
           <p>@{currentCandidate.login}</p>
           
           {currentCandidate.location && (
-            <div>
+            <div className='info'>
               <span>Location: {currentCandidate.location}</span>
             </div>
           )}
           {currentCandidate.company && (
-            <div>
+            <div className='info'>
               <span>Company: {currentCandidate.company}</span>
             </div>
           )}
           {currentCandidate.email && (
-            <div>
+            <div className='info'>
               <span>Email: {currentCandidate.email}</span>
             </div>
           )}
-          <div>
+          <div className='info'>
             <a href={currentCandidate.html_url} target="_blank" rel="noopener noreferrer">
               View Profile
             </a>
@@ -106,7 +106,7 @@ const CandidateSearch = () => {
         </div>
       </div>
       
-      <div>
+      <div className='button-group'>
         <button onClick={handleReject}>Skip</button>
         <button onClick={handleAccept}>Save</button>
       </div>
