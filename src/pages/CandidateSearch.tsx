@@ -14,8 +14,10 @@ const CandidateSearch = () => {
 
   const saveCandidate = (candidate: Candidate) => {
     const savedCandidates = getSavedCandidates();
-    const updatedCandidates = [...savedCandidates, candidate];
-    localStorage.setItem('savedCandidates', JSON.stringify(updatedCandidates));
+    if (!savedCandidates.some(saved => saved.login === candidate.login)) {
+      const updatedCandidates = [...savedCandidates, candidate];
+      localStorage.setItem('savedCandidates', JSON.stringify(updatedCandidates));
+    }
   };
 
   const fetchUserDetails = async (username: string) => {
