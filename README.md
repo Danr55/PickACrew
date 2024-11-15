@@ -1,5 +1,9 @@
 # PickACrew
 
+![PickACrew](./src/assets/PickaCrew1.png)
+
+![PickACrew](./src/assets/PickACrew2.png)
+
 ## Description
 
 PickACrew is a React component that fetches and displays GitHub users, allowing you to view, save, or skip profiles. It uses the GitHub API to search for users and allows you to save your preferred candidates locally in localStorage.
@@ -35,5 +39,7 @@ Oscar Rendon
 Code sourced with help ChatGPT, Xpert learning Assistant.
 
 - github Link: https://github.com/Danr55/PickACrew
+- Website Link: https://pickacrew.netlify.app/
+
 
 
